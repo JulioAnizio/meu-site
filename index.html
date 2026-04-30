@@ -4,246 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Julio Anizio| Criação de Sites Profissionais</title>
-
-<meta name="description" content="Criação de sites profissionais para empresas. Portfólio com clientes reais.">
-<meta name="keywords" content="criação de sites, desenvolvedor web, freelancer, sites profissionais">
-<meta name="author" content="Julio Anizio">
+<title>Julio Pereira | Agência</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --blue:#2563eb;
-  --bg:#f8fbff;
-}
-
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-.secondary{
-  background:transparent;
-  color:#2563eb;
-  border:2px solid #2563eb;
-  margin-left:10px;
-}
+body{background:#0f172a;color:#fff;}
 
-.secondary:hover{
-  background:#2563eb;
-  color:#fff;
-}
-
-body{
-  background:linear-gradient(180deg,#ffffff 0%,#eaf2ff 100%);
-  color:#1f2937;
-}
-
-/* HEADER */
 .header{
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:20px;
+}
+
+.logo{
+  width:110px;
   background:#fff;
-  position:sticky;
-  top:0;
-  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  padding:8px;
+  border-radius:12px;
 }
 
-.logo img{height:50px;}
-
-.menu{
-  display:flex;
-}
-
-.menu a{
-  margin:0 10px;
-  text-decoration:none;
-  color:#333;
-}
-
-.hamburger{
-  display:none;
-  font-size:28px;
+.lang button{
+  margin-left:5px;
+  padding:6px 10px;
+  border:none;
+  border-radius:6px;
   cursor:pointer;
 }
 
-/* HERO */
 .hero{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  padding:80px 20px;
-  gap:40px;
+  text-align:center;
+  padding:60px 20px;
 }
 
-.hero-text{flex:1;}
-
-.hero h1{
-  font-size:40px;
-  margin-bottom:15px;
-}
-
-.hero p{
-  margin-bottom:20px;
-  color:#555;
-}
-
-.hero img{
-  width:260px;
-  border-radius:50%;
-}
-
-/* BOTÃO */
 .btn{
-  background:var(--blue);
+  background:#3b82f6;
+  padding:12px 20px;
+  border-radius:10px;
   color:#fff;
-  padding:14px 22px;
-  border-radius:12px;
   text-decoration:none;
-  display:inline-block;
-  transition:0.3s;
+  margin:5px;
 }
 
-.btn:hover{
-  background:#1d4ed8;
-}
-
-
-/* PORTFOLIO */
-.portfolio{
-  padding:100px 20px;
+.section{
+  padding:50px 20px;
   text-align:center;
 }
 
-.portfolio h2{
-  font-size:32px;
-  margin-bottom:60px;
-}
-
-.portfolio-grid{
+.grid{
   display:grid;
-  gap:40px;
+  gap:20px;
 }
 
-.portfolio-card{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:40px;
-  background:#fff;
-  padding:30px;
-  border-radius:20px;
-  box-shadow:0 20px 60px rgba(0,0,0,0.08);
-  transition:0.4s;
+.card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:10px;
 }
 
-.portfolio-card:hover{
-  transform:translateY(-10px);
-}
-
-.portfolio-card.dark{
-  background:#0f172a;
-  color:#fff;
-}
-
-/* MOCKUP */
-.mockup{
-  flex:1;
-  display:flex;
-  justify-content:center;
-}
-
-.mockup img{
-  width:260px;
-  border-radius:30px;
-  box-shadow:0 25px 60px rgba(0,0,0,0.4);
-  transition:0.4s;
-}
-
-.portfolio-card:hover .mockup img{
-  transform:scale(1.05) rotate(-1deg);
-}
-
-/* TEXTO */
-.info{
-  flex:1;
-  text-align:left;
-}
-
-.info h3{
-  font-size:24px;
-  margin-bottom:10px;
-}
-
-.info p{
-  margin-bottom:20px;
-  color:#555;
-}
-
-.portfolio-card.dark .info p{
-  color:#cbd5f5;
-}
-
-/* FOOTER */
 .footer{
-  background:#111;
-  color:#fff;
   text-align:center;
-  padding:40px;
+  padding:30px;
+  background:#020617;
 }
 
-/* WHATS */
 .whatsapp{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
-  color:#fff;
   padding:15px;
   border-radius:50%;
-  text-decoration:none;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-.hamburger{display:block;}
-
-.menu{
-  display:none;
-  flex-direction:column;
-  position:absolute;
-  top:70px;
-  right:20px;
-  background:#fff;
-  padding:15px;
-  border-radius:12px;
-}
-
-.menu.active{display:flex;}
-
-.hero{
-  flex-direction:column;
-  text-align:center;
-}
-
-.hero h1{font-size:26px;}
-
-.btn{width:100%;}
-
-.portfolio-card{
-  flex-direction:column;
-  text-align:center;
-}
-
-.info{
-  text-align:center;
-}
-
-.mockup img{
-  width:200px;
-}
-
+  color:#fff;
 }
 </style>
 </head>
@@ -251,83 +85,89 @@ body{
 <body>
 
 <div class="header">
-<div class="logo">
-<img src="assets/logoJulio.png">
-</div>
+<img src="assets/logo.png" class="logo">
 
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-
-<div class="menu" id="menu">
-<a href="#">Início</a>
-<a href="#portfolio">Portfólio</a>
-<a href="#contato">Contato</a>
+<div class="lang">
+<button onclick="setLang('pt')">PT</button>
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('es')">ES</button>
 </div>
 </div>
 
-<div class="hero">
-<div class="hero-text">
-<h1>Criação de sites profissionais</h1>
-<p>Ajudo empresas a vender mais com presença online.</p>
+<section class="hero">
+<h1 id="title"></h1>
+<p id="desc"></p>
 
-<a href="https://wa.me/5547999500750" class="btn">Falar no WhatsApp</a>
+<a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual" class="btn" id="cta1"></a>
+
+<a href="index.html" class="btn" style="background:#64748b;" id="cta2"></a>
+
+<br>
+
+<a href="https://instagram.com/SEUINSTAGRAM" class="btn" style="background:#e1306c;">
+Instagram
+</a>
+</section>
+
+<section class="section">
+<h2 id="servicesTitle"></h2>
+
+<div class="grid">
+<div class="card" id="s1"></div>
+<div class="card" id="s2"></div>
+<div class="card" id="s3"></div>
 </div>
+</section>
 
-<img src="assets/fotoJulio.png/">
-</div>
+<section class="section">
+<h2 id="portfolioTitle"></h2>
 
-<section class="portfolio" id="portfolio">
-
-<h2>Projetos Recentes</h2>
-
-<div class="portfolio-grid">
-
-<!-- MARANDU -->
-<div class="portfolio-card">
-<div class="mockup">
+<div class="grid">
+<div class="card">
 <img src="assets/marandu_clean.png">
 </div>
 
-<div class="info">
-<h3>Agropecuária Marandú</h3>
-<p>Site institucional moderno com foco em conversão.</p>
-
-<a href="https://julioanizio.github.io/marandu/" target="_blank" class="btn">
-Ver Projeto
-</a>
-</div>
-</div>
-
-<!-- OVIDIO -->
-<div class="portfolio-card dark">
-<div class="mockup">
+<div class="card">
 <img src="assets/ovidio_clean.png">
 </div>
-
-<div class="info">
-<h3>Transporte Ovídio dos Santos</h3>
-<p>Landing page com identidade forte e geração de contatos.</p>
-
-<a href="https://julioanizio.github.io/site_ovidio/" target="_blank" class="btn">
-Ver Projeto
-</a>
 </div>
-</div>
-
-</div>
-
 </section>
 
-<div class="footer" id="contato">
-<p>© Julio Anizio</p>
-<p>Contato via WhatsApp</p>
+<section class="section">
+<h2 id="locationTitle"></h2>
+<p>Avenida Nilo Simas, 162, Itajaí - SC</p>
+
+<iframe src="https://www.google.com/maps?q=Avenida+Nilo+Simas+162+Itajai+SC&output=embed"
+width="100%" height="300"></iframe>
+</section>
+
+<div class="footer">
+<p>© Julio Pereira</p>
 </div>
 
-<a class="whatsapp" href="https://wa.me/5547999500750">💬</a>
+<a class="whatsapp" href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual">💬</a>
 
 <script>
-function toggleMenu(){
-document.getElementById("menu").classList.toggle("active");
+const c={
+pt:["Sites que vendem","Criação de sites profissionais","Quero meu site","Versão simples","Serviços","Design moderno","Responsivo","SEO","Projetos","Localização"],
+en:["Websites that sell","Professional websites","I want my site","Simple version","Services","Modern design","Responsive","SEO","Projects","Location"],
+es:["Sitios que venden","Sitios profesionales","Quiero mi sitio","Versión simple","Servicios","Diseño moderno","Responsivo","SEO","Proyectos","Ubicación"]
+};
+
+function setLang(l){
+document.getElementById("title").innerText=c[l][0];
+document.getElementById("desc").innerText=c[l][1];
+document.getElementById("cta1").innerText=c[l][2];
+document.getElementById("cta2").innerText=c[l][3];
+document.getElementById("servicesTitle").innerText=c[l][4];
+document.getElementById("s1").innerText=c[l][5];
+document.getElementById("s2").innerText=c[l][6];
+document.getElementById("s3").innerText=c[l][7];
+document.getElementById("portfolioTitle").innerText=c[l][8];
+document.getElementById("locationTitle").innerText=c[l][9];
 }
+
+setLang('pt');
 </script>
 
 </body>
