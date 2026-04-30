@@ -11,46 +11,88 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{background:#0f172a;color:#fff;}
+body{
+  background:linear-gradient(180deg,#0f172a,#020617);
+  color:#fff;
+}
 
+/* HEADER */
 .header{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   padding:20px;
 }
 
 .logo{
-  width:110px;
+  width:140px;
   background:#fff;
-  padding:8px;
-  border-radius:12px;
+  padding:10px;
+  border-radius:14px;
 }
 
+/* LANG */
 .lang button{
-  margin-left:5px;
+  margin-left:6px;
   padding:6px 10px;
   border:none;
   border-radius:6px;
   cursor:pointer;
 }
 
+/* HERO */
 .hero{
   text-align:center;
-  padding:60px 20px;
+  padding:80px 20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+
+.hero h1{
+  font-size:32px;
+}
+
+.hero p{
+  color:#cbd5f5;
+}
+
+/* BOTÕES */
+.hero-buttons{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  max-width:320px;
+  gap:12px;
+  margin-top:10px;
 }
 
 .btn{
+  width:100%;
+  text-align:center;
   background:#3b82f6;
-  padding:12px 20px;
-  border-radius:10px;
+  padding:14px;
+  border-radius:12px;
   color:#fff;
   text-decoration:none;
-  margin:5px;
+  font-weight:600;
+  transition:0.3s;
 }
 
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 30px rgba(59,130,246,0.4);
+}
+
+/* SEÇÕES */
 .section{
-  padding:50px 20px;
+  padding:70px 20px;
   text-align:center;
+}
+
+.section h2{
+  margin-bottom:30px;
 }
 
 .grid{
@@ -61,23 +103,39 @@ body{background:#0f172a;color:#fff;}
 .card{
   background:#1e293b;
   padding:20px;
+  border-radius:14px;
+}
+
+/* PORTFOLIO IMG */
+.card img{
+  width:100%;
   border-radius:10px;
 }
 
+/* MAP */
+iframe{
+  border-radius:12px;
+  margin-top:15px;
+}
+
+/* FOOTER */
 .footer{
   text-align:center;
-  padding:30px;
+  padding:40px;
   background:#020617;
 }
 
+/* WHATS */
 .whatsapp{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
-  padding:15px;
+  padding:16px;
   border-radius:50%;
   color:#fff;
+  text-decoration:none;
+  font-size:20px;
 }
 </style>
 </head>
@@ -98,15 +156,17 @@ body{background:#0f172a;color:#fff;}
 <h1 id="title"></h1>
 <p id="desc"></p>
 
+<div class="hero-buttons">
+
 <a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual" class="btn" id="cta1"></a>
 
 <a href="index.html" class="btn" style="background:#64748b;" id="cta2"></a>
 
-<br>
-
-<a href="https://instagram.com/SEUINSTAGRAM" class="btn" style="background:#e1306c;">
-Instagram
+<a href="https://instagram.com/juliodev.full" class="btn" style="background:#e1306c;">
+📸 Instagram
 </a>
+
+</div>
 </section>
 
 <section class="section">
