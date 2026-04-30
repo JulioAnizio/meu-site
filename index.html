@@ -25,24 +25,24 @@ body{
   background:#fff;
 }
 
-.logo{height:50px;}
+.logo{height:55px;}
 
 /* HERO */
 .hero{
   display:flex;
   flex-wrap:wrap;
   align-items:center;
-  padding:60px 20px;
-  gap:30px;
+  padding:70px 20px;
+  gap:40px;
 }
 
 .hero-text{flex:1;}
 
-.hero h1{font-size:32px;margin-bottom:10px;}
+.hero h1{font-size:36px;margin-bottom:10px;}
 .hero p{margin-bottom:20px;color:#555;}
 
 .hero img{
-  width:220px;
+  width:240px;
   border-radius:50%;
 }
 
@@ -56,9 +56,14 @@ body{
 .btn{
   background:#2563eb;
   color:#fff;
-  padding:12px 18px;
-  border-radius:10px;
+  padding:14px 20px;
+  border-radius:12px;
   text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#1d4ed8;
 }
 
 .secondary{
@@ -69,13 +74,13 @@ body{
 
 /* PORTFOLIO */
 .portfolio{
-  padding:60px 20px;
+  padding:80px 20px;
   text-align:center;
 }
 
 .grid{
   display:grid;
-  gap:20px;
+  gap:25px;
 }
 
 .card{
@@ -83,11 +88,35 @@ body{
   padding:20px;
   border-radius:15px;
   box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
 }
 
 .card img{
   width:100%;
   border-radius:10px;
+}
+
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  color:#2563eb;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* LOCAL */
+.location{
+  padding:60px 20px;
+  text-align:center;
+}
+
+iframe{
+  margin-top:15px;
+  border-radius:12px;
 }
 
 /* FOOTER */
@@ -96,6 +125,13 @@ body{
   color:#fff;
   text-align:center;
   padding:30px;
+}
+
+.footer a{
+  color:#fff;
+  display:block;
+  margin-top:10px;
+  text-decoration:none;
 }
 
 /* WHATS */
@@ -108,6 +144,28 @@ body{
   border-radius:50%;
   color:#fff;
   text-decoration:none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:26px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
 }
 </style>
 </head>
@@ -144,19 +202,33 @@ Versão completa
 
 <div class="card">
 <img src="assets/marandu_clean.png">
-<p>Marandú</p>
+<p>Agropecuária Marandú</p>
+<a href="https://julioanizio.github.io/marandu/" target="_blank">Ver site →</a>
 </div>
 
 <div class="card">
 <img src="assets/ovidio_clean.png">
-<p>Ovídio</p>
+<p>Ovídio dos Santos</p>
+<a href="https://julioanizio.github.io/site_ovidio/" target="_blank">Ver site →</a>
 </div>
 
 </div>
 </section>
 
+<section class="location">
+<h2>Localização</h2>
+<p>Avenida Nilo Simas, 162, Itajaí - SC</p>
+
+<iframe src="https://www.google.com/maps?q=Avenida+Nilo+Simas+162+Itajai+SC&output=embed"
+width="100%" height="300"></iframe>
+</section>
+
 <div class="footer">
-<p>© Julio Anizio/p>
+<p>© Julio Anizio</p>
+
+<a href="https://instagram.com/juliodev.full" target="_blank">
+📸 Instagram
+</a>
 </div>
 
 <a class="whatsapp" href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual">💬</a>
