@@ -11,6 +11,23 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
+.link-card{
+  text-decoration:none;
+  color:#fff;
+  transition:0.3s;
+  display:block;
+}
+
+.link-card:hover{
+  transform:translateY(-5px) scale(1.02);
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.card p{
+  margin-top:10px;
+  font-weight:600;
+}
+
 body{
   background:linear-gradient(180deg,#0f172a,#020617);
   color:#fff;
@@ -183,13 +200,25 @@ iframe{
 <h2 id="portfolioTitle"></h2>
 
 <div class="grid">
+<section class="portfolio">
+<h2>Projetos</h2>
+
+<div class="grid">
+
 <div class="card">
 <img src="assets/marandu_clean.png">
+<p>Agropecuária Marandú</p>
+<a href="https://julioanizio.github.io/marandu/" target="_blank">Ver site →</a>
 </div>
 
 <div class="card">
 <img src="assets/ovidio_clean.png">
+<p>Ovídio dos Santos</p>
+<a href="https://julioanizio.github.io/site_ovidio/" target="_blank">Ver site →</a>
 </div>
+
+</div>
+</section>
 </div>
 </section>
 
