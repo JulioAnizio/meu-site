@@ -6,9 +6,15 @@
 
 <title>Julio Anizio | Desenvolvedor Full Stack em Itajaí SC</title>
 
-<meta name="description" content="Desenvolvedor Full Stack em Itajaí SC. Criação de sites profissionais, rápidos e focados em conversão.">
-<meta name="keywords" content="criação de sites, desenvolvedor web, freelancer, full stack, Itajaí SC, sites profissionais">
-<meta name="author" content="Julio Anizio">
+<meta name="description" content="Criação de sites profissionais em Itajaí SC. Sites rápidos, modernos e focados em vendas.">
+
+<meta property="og:title" content="Julio Anizio | Sites que vendem">
+<meta property="og:description" content="Desenvolvimento de sites profissionais, modernos e focados em conversão em Itajaí. Full Stack">
+<meta property="og:image" content="https://julioanizio.github.io/assets/og-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://julioanizio.github.io/">
+
+<meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/logoJulio.png">
 
@@ -47,14 +53,28 @@ body{
 
 /* HERO */
 .hero{
+  background:url('assets/og-image.jpg') center/cover no-repeat;
+  min-height:90vh;
   display:flex;
-  flex-wrap:wrap;
   align-items:center;
-  padding:70px 20px;
-  gap:40px;
+  justify-content:center;
+  text-align:center;
+  position:relative;
 }
 
-.hero-text{flex:1;}
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  color:#fff;
+  max-width:600px;
+}
 
 .hero h1{
   font-size:36px;
@@ -63,12 +83,7 @@ body{
 
 .hero p{
   margin-bottom:20px;
-  color:#555;
-}
-
-.hero img{
-  width:240px;
-  border-radius:50%;
+  color:#ddd;
 }
 
 /* BOTÕES */
@@ -208,10 +223,12 @@ Julio Anizio Desenvolvimento Full Stack • Itajaí - SC
 </div>
 
 <!-- HERO -->
-<div class="hero">
-<div class="hero-text">
-<h1>Criação de sites profissionais</h1>
-<p>Sites rápidos, modernos e focados em gerar clientes.</p>
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Sites que vendem</h1>
+<p>Desenvolvimento de sites modernos, rápidos e focados em conversão.</p>
 
 <div class="hero-buttons">
 <a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual" class="btn">
@@ -219,10 +236,13 @@ Falar no WhatsApp
 </a>
 
 <a href="agencia.html" class="btn secondary">
-Ver versão completa
+Versão completa
 </a>
 </div>
+
 </div>
+
+</section>
 
 <img src="assets/fotoJulio.png">
 </div>
