@@ -6,12 +6,11 @@
 
 <title>Julio Anizio | Desenvolvedor Full Stack em Itajaí SC</title>
 
-<!-- TAGS OPEN GRAPH (OG) CORRIGIDAS -->
+<!-- META TAGS OPEN GRAPH -->
 <meta property="og:title" content="Julio Anizio | Sites que vendem">
-<meta property="og:description" content="Desenvolvimento de sites profissionais, modernos e focados em conversão em Itajaí.">
-<meta property="og:image" content="https://julioanizio.github.io/meu-site/assets/og-image.jpg">
+<meta property="og:description" content="Desenvolvimento de sites profissionais e modernos em Itajaí.">
+<meta property="og:image" content="https://julioanizio.github.io/meu-site/assets/edited-image.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://julioanizio.github.io/">
 
 <link rel="icon" href="assets/logoJulio.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -19,187 +18,195 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{
-  background:#fff;
-  color:#1f2937;
+body {
+  /* Fundo inspirado nos tons da foto (Roxo e Azul escuro) */
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  color: #fff;
+  overflow-x: hidden;
 }
 
 /* BARRA SUPERIOR */
-.topbar{
-  background:linear-gradient(90deg,#2563eb,#1d4ed8);
-  color:#fff;
-  text-align:center;
-  padding:8px;
-  font-size:14px;
+.topbar {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* HEADER */
-.header{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:15px;
-  background:#fff;
+/* BANNER PRINCIPAL (FOTO ORIGINAL) */
+.hero-banner {
+  width: 100%;
+  display: block;
 }
 
-.logo{
-  height:60px;
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* HERO / BANNER PRINCIPAL (MÓVIDO PARA O LUGAR DA FOTO) */
-.hero{
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/og-image.jpg') center/cover no-repeat;
-  min-height: 80vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
+/* SEÇÃO DE CONTEÚDO ABAIXO DA FOTO */
+.content-section {
   padding: 40px 20px;
+  text-align: center;
 }
 
-.hero-content{
-  color:#fff;
-  max-width:700px;
-}
-
-.hero h1{
-  font-size:48px;
+.content-section h1 {
+  font-size: 38px;
   font-weight: 700;
-  margin-bottom:15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  /* Destaque para o título */
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
-.hero p{
+.content-section p {
   font-size: 18px;
-  margin-bottom:30px;
-  color:#efefef;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* BOTÕES NA POSIÇÃO ORIGINAL */
-.hero-buttons{
-  display:flex;
+/* BOTÕES REESTRUTURADOS */
+.button-group {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap:15px;
+  gap: 15px;
+  margin-bottom: 50px;
 }
 
-.btn{
-  background:#2563eb;
-  color:#fff;
-  padding:16px 40px;
-  border-radius:12px;
-  text-decoration:none;
-  transition:0.3s;
+.btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s;
   font-weight: 600;
   width: 100%;
-  max-width: 320px;
+  max-width: 350px;
   text-align: center;
   font-size: 18px;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
-.btn.secondary{
+.btn.secondary {
   background: #fff;
-  color: #2563eb;
+  color: #1e3a8a;
 }
 
-.btn:hover{
-  transform: scale(1.02);
-  opacity: 0.9;
+.btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
 }
 
-/* PORTFOLIO */
-.portfolio{
-  padding:60px 20px;
-  text-align:center;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap:25px;
+/* GRID DE PROJETOS */
+.portfolio {
+  padding: 20px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.card{
-  background:#fff;
-  padding:20px;
-  border-radius:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.1);
-  border: 1px solid #eee;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
-.card img{
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  text-align: left;
+}
+
+.card img {
   width: 100%;
-  border-radius:10px;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
-/* WHATSAPP FLUTUANTE */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
+.card p {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius:50%;
-  color:#fff;
-  text-decoration:none;
-  font-size: 24px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  z-index: 999;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-@media(max-width:768px){
-  .hero h1{ font-size: 32px; }
+/* MOBILE */
+@media (max-width: 768px) {
+  .content-section h1 { font-size: 28px; }
+  .content-section p { font-size: 16px; }
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOPBAR -->
 <div class="topbar">
-Julio Anizio • Desenvolvimento Full Stack • Itajaí - SC
+Avenida Nilo Simas, 162, Itajaí - SC | +55 47 99950-0750
 </div>
 
-<div class="header">
-<img src="assets/logoJulio.png" class="logo" alt="Logo Julio Anizio">
+<!-- BANNER PRINCIPAL (FOTO EDITADA) -->
+<div class="hero-banner">
+  <img src="assets/edited-image.jpg" alt="Julio Anizio - Sites que Vendem">
 </div>
 
-<!-- O BANNER AGORA É A PRIMEIRA SEÇÃO, OCUPANDO O DESTAQUE -->
-<section class="hero">
-<div class="hero-content">
-<h1>Sites que vendem</h1>
-<p>Desenvolvimento de sites modernos, rápidos e focados em conversão.</p>
+<!-- CONTEÚDO ABAIXO DA FOTO -->
+<section class="content-section">
+  <h1>Sites que vendem</h1>
+  <p>Desenvolvimento de sites profissionais, modernos, rápidos e focados em conversão em Itajaí e região.</p>
 
-<div class="hero-buttons">
-<a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" class="btn">Falar no WhatsApp</a>
-<a href="agencia.html" class="btn secondary">Versão completa</a>
-</div>
-</div>
+  <div class="button-group">
+    <a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" class="btn">SOLICITAR ORÇAMENTO</a>
+    <a href="agencia.html" class="btn secondary">NOSSOS SERVIÇOS</a>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div class="portfolio">
+    <div class="grid">
+      <div class="card">
+        <img src="assets/marandu_clean.png" alt="Projeto Marandú">
+        <p>Agropecuária Marandú</p>
+        <a href="https://julioanizio.github.io/marandu/" target="_blank" style="color:#60a5fa; text-decoration:none;">Ver projeto →</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/ovidio_clean.png" alt="Projeto Ovídio">
+        <p>Ovídio dos Santos</p>
+        <a href="https://julioanizio.github.io/site_ovidio/" target="_blank" style="color:#60a5fa; text-decoration:none;">Ver projeto →</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="portfolio">
-<h2>Meus Projetos</h2>
-<div class="grid">
-<div class="card">
-<img src="assets/marandu_clean.png" alt="Projeto Marandú">
-<p>Agropecuária Marandú</p>
-<a href="https://julioanizio.github.io/marandu/" target="_blank" style="color:#2563eb; text-decoration:none; font-weight:600;">Ver site →</a>
-</div>
-
-<div class="card">
-<img src="assets/ovidio_clean.png" alt="Projeto Ovídio">
-<p>Ovídio dos Santos</p>
-<a href="https://julioanizio.github.io/site_ovidio/" target="_blank" style="color:#2563eb; text-decoration:none; font-weight:600;">Ver site →</a>
-</div>
-</div>
-</section>
-
-<a class="whatsapp" href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" target="_blank">💬</a>
+<!-- WHATSAPP FLUTUANTE -->
+<a class="whatsapp-float" href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" target="_blank">💬</a>
 
 </body>
 </html>
