@@ -8,16 +8,18 @@
 
 <meta name="description" content="Criação de sites profissionais em Itajaí SC. Sites rápidos, modernos e focados em vendas.">
 
+<!-- OPEN GRAPH CORRIGIDO -->
 <meta property="og:title" content="Julio Anizio | Sites que vendem">
 <meta property="og:description" content="Desenvolvimento de sites profissionais, modernos e focados em conversão em Itajaí. Full Stack">
+<!-- Verifique se esta imagem existe EXATAMENTE neste caminho no GitHub Pages -->
 <meta property="og:image" content="https://julioanizio.github.io/meu-site/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://julioanizio.github.io/">
 
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/logoJulio.png">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -26,6 +28,14 @@
 body{
   background:linear-gradient(180deg,#ffffff 0%,#eaf2ff 100%);
   color:#1f2937;
+  overflow-x: hidden;
+}
+
+/* AJUSTE GLOBAL DE IMAGENS */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* BARRA SUPERIOR */
@@ -54,12 +64,13 @@ body{
 /* HERO */
 .hero{
   background:url('assets/og-image.jpg') center/cover no-repeat;
-  min-height:90vh;
+  min-height:70vh; /* Ajustado para não ocupar a tela toda se não houver conteúdo */
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
   position:relative;
+  padding: 40px 20px;
 }
 
 .hero::after{
@@ -90,6 +101,7 @@ body{
 .hero-buttons{
   display:flex;
   gap:10px;
+  justify-content: center;
   flex-wrap:wrap;
 }
 
@@ -100,6 +112,7 @@ body{
   border-radius:12px;
   text-decoration:none;
   transition:0.3s;
+  font-weight: 600;
 }
 
 .btn:hover{
@@ -107,20 +120,37 @@ body{
 }
 
 .secondary{
-  background:transparent;
+  background: #fff;
   color:#2563eb;
   border:2px solid #2563eb;
 }
 
+/* FOTO PERFIL AJUSTADA */
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.foto-perfil {
+    width: 250px; /* Tamanho controlado */
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 /* PORTFOLIO */
 .portfolio{
-  padding:80px 20px;
+  padding:60px 20px;
   text-align:center;
 }
 
 .grid{
   display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsivo */
   gap:25px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .card{
@@ -131,32 +161,22 @@ body{
   transition:0.3s;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-}
-
 .card img{
-  width:100%;
   border-radius:10px;
+  margin-bottom: 15px;
 }
 
-.card a{
-  display:inline-block;
-  margin-top:10px;
-  color:#2563eb;
-  font-weight:600;
-  text-decoration:none;
-}
-
-/* LOCAL */
+/* LOCALIZAÇÃO */
 .location{
   padding:60px 20px;
   text-align:center;
+  background: #f8fafc;
 }
 
 iframe{
   margin-top:15px;
   border-radius:12px;
+  max-width: 800px;
 }
 
 /* FOOTER */
@@ -167,126 +187,85 @@ iframe{
   padding:30px;
 }
 
-.footer a{
-  color:#fff;
-  display:block;
-  margin-top:10px;
-  text-decoration:none;
-}
-
-/* WHATS */
 .whatsapp{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
-  padding:15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius:50%;
   color:#fff;
   text-decoration:none;
+  font-size: 24px;
+  z-index: 999;
 }
 
-/* MOBILE */
 @media(max-width:768px){
-  .hero{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .hero h1{
-    font-size:26px;
-  }
-
-  .hero-buttons{
-    flex-direction:column;
-    width:100%;
-  }
-
-  .btn{
-    width:100%;
-    text-align:center;
-  }
+  .hero h1{ font-size:28px; }
+  .grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOPO -->
 <div class="topbar">
 Julio Anizio Desenvolvimento Full Stack • Itajaí - SC
 </div>
 
-<!-- LOGO -->
 <div class="header">
-<img src="assets/logoJulio.png" class="logo">
+<img src="assets/logoJulio.png" class="logo" alt="Logo Julio Anizio">
 </div>
 
-<!-- HERO -->
 <section class="hero">
-
 <div class="hero-content">
-
 <h1>Sites que vendem</h1>
 <p>Desenvolvimento de sites modernos, rápidos e focados em conversão.</p>
-
 <div class="hero-buttons">
-<a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual" class="btn">
-Falar no WhatsApp
-</a>
-
-<a href="agencia.html" class="btn secondary">
-Versão completa
-</a>
+<a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" class="btn">Falar no WhatsApp</a>
+<a href="agencia.html" class="btn secondary">Versão completa</a>
 </div>
-
 </div>
-
 </section>
 
-<img src="assets/fotoJulio.png">
+<!-- SEÇÃO DA FOTO CORRIGIDA -->
+<div class="perfil-container">
+    <img src="assets/fotoJulio.png" class="foto-perfil" alt="Julio Anizio">
 </div>
 
-<!-- PORTFOLIO -->
 <section class="portfolio">
 <h2>Projetos</h2>
-
 <div class="grid">
-
 <div class="card">
-<img src="assets/marandu_clean.png">
+<img src="assets/marandu_clean.png" alt="Projeto Marandú">
 <p>Agropecuária Marandú</p>
 <a href="https://julioanizio.github.io/marandu/" target="_blank">Ver site →</a>
 </div>
 
 <div class="card">
-<img src="assets/ovidio_clean.png">
+<img src="assets/ovidio_clean.png" alt="Projeto Ovídio">
 <p>Ovídio dos Santos</p>
 <a href="https://julioanizio.github.io/site_ovidio/" target="_blank">Ver site →</a>
 </div>
-
 </div>
 </section>
 
-<!-- LOCAL -->
 <section class="location">
 <h2>Localização</h2>
 <p>Avenida Nilo Simas, 162, Itajaí - SC</p>
-
-<iframe src="https://www.google.com/maps?q=Avenida+Nilo+Simas+162+Itajai+SC&output=embed"
-width="100%" height="300"></iframe>
+<iframe src="https://www.google.com/maps?q=Avenida+Nilo+Simas+162+Itajai+SC&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
-<!-- FOOTER -->
 <div class="footer">
 <p>© Julio Anizio</p>
-
-<a href="https://instagram.com/juliodev.full" target="_blank">
-📸 Instagram
-</a>
+<a href="https://instagram.com/juliodev.full" target="_blank">📸 Instagram</a>
 </div>
 
-<a class="whatsapp" href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual">💬</a>
+<a class="whatsapp" href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" target="_blank">💬</a>
 
 </body>
 </html>
