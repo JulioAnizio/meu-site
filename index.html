@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Julio Anizio | Criação de Sites</title>
+<title>Julio Anizio | Desenvolvedor Full Stack em Itajaí SC</title>
+
+<meta name="description" content="Desenvolvedor Full Stack em Itajaí SC. Criação de sites profissionais, rápidos e focados em conversão.">
+<meta name="keywords" content="criação de sites, desenvolvedor web, freelancer, full stack, Itajaí SC, sites profissionais">
+<meta name="author" content="Julio Anizio">
+
+<link rel="icon" href="assets/logoJulio.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -16,22 +22,27 @@ body{
   color:#1f2937;
 }
 
+/* BARRA SUPERIOR */
+.topbar{
+  background:linear-gradient(90deg,#2563eb,#1d4ed8);
+  color:#fff;
+  text-align:center;
+  padding:8px;
+  font-size:14px;
+}
+
 /* HEADER */
 .header{
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
-  padding:20px;
+  padding:25px;
   background:#fff;
+  box-shadow:0 2px 15px rgba(0,0,0,0.05);
 }
 
 .logo{
-  height: 120px;
-  transition: 1.2;
-}
-
-.logo:hover{
-  transform:scale(1.50);
+  height:75px;
 }
 
 /* HERO */
@@ -45,8 +56,15 @@ body{
 
 .hero-text{flex:1;}
 
-.hero h1{font-size:36px;margin-bottom:10px;}
-.hero p{margin-bottom:20px;color:#555;}
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  margin-bottom:20px;
+  color:#555;
+}
 
 .hero img{
   width:240px;
@@ -179,22 +197,29 @@ iframe{
 
 <body>
 
+<!-- TOPO -->
+<div class="topbar">
+Julio Anizio Desenvolvimento Full Stack • Itajaí - SC
+</div>
+
+<!-- LOGO -->
 <div class="header">
 <img src="assets/logoJulio.png" class="logo">
 </div>
 
+<!-- HERO -->
 <div class="hero">
 <div class="hero-text">
 <h1>Criação de sites profissionais</h1>
-<p>Ajudo empresas a vender mais com presença online.</p>
+<p>Sites rápidos, modernos e focados em gerar clientes.</p>
 
 <div class="hero-buttons">
 <a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site,%20quero%20um%20igual" class="btn">
-WhatsApp
+Falar no WhatsApp
 </a>
 
 <a href="agencia.html" class="btn secondary">
-Versão completa
+Ver versão completa
 </a>
 </div>
 </div>
@@ -202,6 +227,7 @@ Versão completa
 <img src="assets/fotoJulio.png">
 </div>
 
+<!-- PORTFOLIO -->
 <section class="portfolio">
 <h2>Projetos</h2>
 
@@ -222,6 +248,7 @@ Versão completa
 </div>
 </section>
 
+<!-- LOCAL -->
 <section class="location">
 <h2>Localização</h2>
 <p>Avenida Nilo Simas, 162, Itajaí - SC</p>
@@ -230,6 +257,7 @@ Versão completa
 width="100%" height="300"></iframe>
 </section>
 
+<!-- FOOTER -->
 <div class="footer">
 <p>© Julio Anizio</p>
 
