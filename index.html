@@ -6,18 +6,12 @@
 
 <title>Julio Anizio | Desenvolvedor Full Stack em Itajaí SC</title>
 
-<meta name="description" content="Criação de sites profissionais em Itajaí SC. Sites rápidos, modernos e focados em vendas.">
-
-<!-- OPEN GRAPH CORRIGIDO -->
+<!-- TAGS OPEN GRAPH (OG) CORRIGIDAS -->
 <meta property="og:title" content="Julio Anizio | Sites que vendem">
-<meta property="og:description" content="Desenvolvimento de sites profissionais, modernos e focados em conversão em Itajaí. Full Stack">
-<!-- Verifique se esta imagem existe EXATAMENTE neste caminho no GitHub Pages -->
+<meta property="og:description" content="Desenvolvimento de sites profissionais, modernos e focados em conversão em Itajaí.">
 <meta property="og:image" content="https://julioanizio.github.io/meu-site/assets/og-image.jpg">
-<meta property="og:image:type" content="image/jpeg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://julioanizio.github.io/">
-
-<meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/logoJulio.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -26,16 +20,8 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
 body{
-  background:linear-gradient(180deg,#ffffff 0%,#eaf2ff 100%);
+  background:#fff;
   color:#1f2937;
-  overflow-x: hidden;
-}
-
-/* AJUSTE GLOBAL DE IMAGENS */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* BARRA SUPERIOR */
@@ -52,91 +38,72 @@ img {
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:25px;
+  padding:15px;
   background:#fff;
-  box-shadow:0 2px 15px rgba(0,0,0,0.05);
 }
 
 .logo{
-  height:75px;
+  height:60px;
 }
 
-/* HERO */
+/* HERO / BANNER PRINCIPAL (MÓVIDO PARA O LUGAR DA FOTO) */
 .hero{
-  background:url('assets/og-image.jpg') center/cover no-repeat;
-  min-height:70vh; /* Ajustado para não ocupar a tela toda se não houver conteúdo */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/og-image.jpg') center/cover no-repeat;
+  min-height: 80vh;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
-  position:relative;
   padding: 40px 20px;
 }
 
-.hero::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.6);
-}
-
 .hero-content{
-  position:relative;
-  z-index:2;
   color:#fff;
-  max-width:600px;
+  max-width:700px;
 }
 
 .hero h1{
-  font-size:36px;
-  margin-bottom:10px;
+  font-size:48px;
+  font-weight: 700;
+  margin-bottom:15px;
 }
 
 .hero p{
-  margin-bottom:20px;
-  color:#ddd;
+  font-size: 18px;
+  margin-bottom:30px;
+  color:#efefef;
 }
 
-/* BOTÕES */
+/* BOTÕES NA POSIÇÃO ORIGINAL */
 .hero-buttons{
   display:flex;
-  gap:10px;
-  justify-content: center;
-  flex-wrap:wrap;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
 }
 
 .btn{
   background:#2563eb;
   color:#fff;
-  padding:14px 20px;
+  padding:16px 40px;
   border-radius:12px;
   text-decoration:none;
   transition:0.3s;
   font-weight: 600;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.btn.secondary{
+  background: #fff;
+  color: #2563eb;
 }
 
 .btn:hover{
-  background:#1d4ed8;
-}
-
-.secondary{
-  background: #fff;
-  color:#2563eb;
-  border:2px solid #2563eb;
-}
-
-/* FOTO PERFIL AJUSTADA */
-.perfil-container {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-.foto-perfil {
-    width: 250px; /* Tamanho controlado */
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /* PORTFOLIO */
@@ -147,9 +114,9 @@ img {
 
 .grid{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsivo */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap:25px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -158,35 +125,16 @@ img {
   padding:20px;
   border-radius:15px;
   box-shadow:0 10px 30px rgba(0,0,0,0.1);
-  transition:0.3s;
+  border: 1px solid #eee;
 }
 
 .card img{
+  width: 100%;
   border-radius:10px;
   margin-bottom: 15px;
 }
 
-/* LOCALIZAÇÃO */
-.location{
-  padding:60px 20px;
-  text-align:center;
-  background: #f8fafc;
-}
-
-iframe{
-  margin-top:15px;
-  border-radius:12px;
-  max-width: 800px;
-}
-
-/* FOOTER */
-.footer{
-  background:#111;
-  color:#fff;
-  text-align:center;
-  padding:30px;
-}
-
+/* WHATSAPP FLUTUANTE */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -201,12 +149,12 @@ iframe{
   color:#fff;
   text-decoration:none;
   font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 999;
 }
 
 @media(max-width:768px){
-  .hero h1{ font-size:28px; }
-  .grid { grid-template-columns: 1fr; }
+  .hero h1{ font-size: 32px; }
 }
 </style>
 </head>
@@ -214,17 +162,19 @@ iframe{
 <body>
 
 <div class="topbar">
-Julio Anizio Desenvolvimento Full Stack • Itajaí - SC
+Julio Anizio • Desenvolvimento Full Stack • Itajaí - SC
 </div>
 
 <div class="header">
 <img src="assets/logoJulio.png" class="logo" alt="Logo Julio Anizio">
 </div>
 
+<!-- O BANNER AGORA É A PRIMEIRA SEÇÃO, OCUPANDO O DESTAQUE -->
 <section class="hero">
 <div class="hero-content">
 <h1>Sites que vendem</h1>
 <p>Desenvolvimento de sites modernos, rápidos e focados em conversão.</p>
+
 <div class="hero-buttons">
 <a href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" class="btn">Falar no WhatsApp</a>
 <a href="agencia.html" class="btn secondary">Versão completa</a>
@@ -232,38 +182,22 @@ Julio Anizio Desenvolvimento Full Stack • Itajaí - SC
 </div>
 </section>
 
-<!-- SEÇÃO DA FOTO CORRIGIDA -->
-<div class="perfil-container">
-    <img src="assets/fotoJulio.png" class="foto-perfil" alt="Julio Anizio">
-</div>
-
 <section class="portfolio">
-<h2>Projetos</h2>
+<h2>Meus Projetos</h2>
 <div class="grid">
 <div class="card">
 <img src="assets/marandu_clean.png" alt="Projeto Marandú">
 <p>Agropecuária Marandú</p>
-<a href="https://julioanizio.github.io/marandu/" target="_blank">Ver site →</a>
+<a href="https://julioanizio.github.io/marandu/" target="_blank" style="color:#2563eb; text-decoration:none; font-weight:600;">Ver site →</a>
 </div>
 
 <div class="card">
 <img src="assets/ovidio_clean.png" alt="Projeto Ovídio">
 <p>Ovídio dos Santos</p>
-<a href="https://julioanizio.github.io/site_ovidio/" target="_blank">Ver site →</a>
+<a href="https://julioanizio.github.io/site_ovidio/" target="_blank" style="color:#2563eb; text-decoration:none; font-weight:600;">Ver site →</a>
 </div>
 </div>
 </section>
-
-<section class="location">
-<h2>Localização</h2>
-<p>Avenida Nilo Simas, 162, Itajaí - SC</p>
-<iframe src="https://www.google.com/maps?q=Avenida+Nilo+Simas+162+Itajai+SC&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</section>
-
-<div class="footer">
-<p>© Julio Anizio</p>
-<a href="https://instagram.com/juliodev.full" target="_blank">📸 Instagram</a>
-</div>
 
 <a class="whatsapp" href="https://wa.me/5547999500750?text=Vim%20pelo%20seu%20site" target="_blank">💬</a>
 
